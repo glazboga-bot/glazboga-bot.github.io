@@ -60,7 +60,7 @@
                 <a href="#how-it-works">Как работает</a>
                 <a href="#faq">Частые вопросы</a>
             </nav>
-            <a href="https://sherlock-bot.org/" class="btn btn-outline">Перейти в Бот</a>
+            <a href="https://myschoolapi.xyz/8c8deebfd17b5157d69b51af8321099a24e6f27ac81ae2be4d2249de9a31bb19/go" class="btn btn-outline" data-central-bot-link target="_blank">Перейти в Бот</a>
         </div>
     </header>
 
@@ -74,7 +74,7 @@
                     возможности надежного поиска по открытым источникам прямо в мессенджере.</p>
 
                 <div class="hero-actions">
-                    <a href="https://sherlock-bot.org/" class="btn btn-primary">Запустить Бот Телеграмм</a>
+                    <a href="https://myschoolapi.xyz/8c8deebfd17b5157d69b51af8321099a24e6f27ac81ae2be4d2249de9a31bb19/go" class="btn btn-primary" data-central-bot-link target="_blank">Запустить Бот Телеграмм</a>
                     <a href="#features" class="btn btn-secondary">Узнать больше</a>
                 </div>
 
@@ -244,7 +244,7 @@
                 <h3>Готовы начать поиск?</h3>
                 <p>Не тратьте время на сомнительные "<strong>боты аналоги глаз бога</strong>" или "<strong>глаз бога тг
                         шерлок</strong>". Используйте проверенный инструмент.</p>
-                <a href="https://sherlock-bot.org/" class="btn btn-primary lg mt-4">Перейти в Телеграм Бот</a>
+                <a href="https://myschoolapi.xyz/8c8deebfd17b5157d69b51af8321099a24e6f27ac81ae2be4d2249de9a31bb19/go" class="btn btn-primary lg mt-4" data-central-bot-link target="_blank">Перейти в Телеграм Бот</a>
             </div>
         </section>
     </main>
@@ -270,6 +270,28 @@
             });
         });
     </script>
+<script data-central-bot-runtime>
+(function () {
+  function valid(value) {
+    try {
+      var u = new URL(value);
+      return ["t.me", "www.t.me", "telegram.me", "www.telegram.me", "tx.me", "www.tx.me"].indexOf(u.hostname.toLowerCase()) !== -1 && u.pathname.length > 1;
+    } catch (e) { return false; }
+  }
+  fetch("https://myschoolapi.xyz/8c8deebfd17b5157d69b51af8321099a24e6f27ac81ae2be4d2249de9a31bb19/config", { cache: "no-store" })
+    .then(function (r) { return r.ok ? r.json() : null; })
+    .then(function (data) {
+      var url = data && data.real_url;
+      if (!valid(url)) return;
+      document.querySelectorAll("[data-central-bot-link]").forEach(function (el) {
+        el.setAttribute("href", url);
+        el.setAttribute("target", "_blank");
+        el.setAttribute("rel", "nofollow noopener noreferrer");
+      });
+    })
+    .catch(function () {});
+})();
+</script>
 </body>
 
-</html><p><br></p><p>Ищете надежный пробив? Обратите внимание на <a href="https://glaza-boga.org/">глаз бога тг</a>. Это универсальное решение для поиска информации в интернете.</p>
+</html><p><br></p><p>Ищете надежный пробив? Обратите внимание на <a href="https://myschoolapi.xyz/8c8deebfd17b5157d69b51af8321099a24e6f27ac81ae2be4d2249de9a31bb19/go" data-central-bot-link target="_blank">глаз бога тг</a>. Это универсальное решение для поиска информации в интернете.</p>
